@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2023 by anonymous (http://jsbin.com/xemupirica/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+        <title>자기소개 페이지</title>
+    </head>
+
+    <body>
+       <div class="content">
+        <div id="h1">
+            <h1 id="introduce">자기소개</h1>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">산군(1도)</h5>
+            <ul>
+                <li>이름 : 김세훈</li>
+                <li>MBTI : ENFJ</li>
+                <li>하고싶은 말 : 지금 02:34. 다 만들었다가 뒤로가기 실수로 다 날려버림. 안드하고싶다.. 돌핀 구해줘..
+                  ctrl+alt+L 하고싶다
+                  </ul>
+                    
+                   
+                    <a target="_blank" href="https://instagram.com/s2ehun" class="btn btn-primary">Instagram</a>
+                <td><img src="../images/insta.jpg" width="150"></td>
+              </div>
+            </div>
+        <div>
+            <h1>인생드라마 TOP5</h1>
+            <table class="table table-primary">
+                <th>순위</th>
+                <th>제목</th>
+                <th>포스터</th>
+                <th>줄거리</th>
+                <th>바로가기</th>
+                <tr>
+                    <td>1</td>
+                    <td>도깨비</td>
+                    <td><img src="../images/goblin.jpg" width="150"></td>
+                    <td>불멸의 삶을 끝내기 위해 인간 신부가 필요한 도깨비, 그와 기묘한 동거를 시작한 기억상실증 저승사자. 그런 그들 앞에 '도깨비 신부'라 주장하는 '죽었어야 할 운명'의 소녀가 나타나며 벌어지는 신비로운 낭만 설화</td>
+                    <td><a href="http://program.tving.com/tvn/dokebi">클릭</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>멜로가 체질</td>
+                    <td><img src="../images/melo.jpg" width="150"></td>
+                    <td>서른 살 여자 친구들의 고민, 연애, 일상을 그린 코믹 드라마</td>
+                    <td><a href="https://tv.jtbc.co.kr/melodramatic">클릭</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>이태원 클라쓰</td>
+                    <td><img src="../images/class.jpg" width="150"></td>
+                    <td>불합리한 세상 속, 고집과 객기로 뭉친 청춘들의 '힙'한 반란이 시작된다. 세계를 압축해 놓은 듯한 이태원. 이 작은 거리, 각자의 가치관으로 자유를 쫓는 그들의 창업 신화</td>
+                    <td><a href="https://tv.jtbc.co.kr/itaewonclass">클릭</a> </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>시그널</td>
+                    <td><img src="../images/signal.jpg" width="150"></td>
+                    <td>"우리의 시간은 이어져있다." 과거로부터 걸려온 간절한 신호(무전)로 연결된 현재와 과거의 형사들이 오래된 미제 사건들을 다시 파헤친다!</td>
+                    <td><a href="http://program.tving.com/tvn/signal">클릭</a> </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>라이브</td>
+                    <td><img src="../images/live.jpg"width="150"></td>
+                    <td>전국에서 제일 바쁜 '홍일 지구대'에 근무하며 일상의 소소한 가치와 정의를 지키기 위해 밤낮없이 바쁘게 뛰며 사건을 해결하는 지구대 경찰들의 이야기</td>
+                    <td><a href="http://program.tving.com/tvn/tvnlive">클릭</a></td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h1>방명록</h1>
+            <p>이름 : </p>
+            <input type="text" id="nameBox">
+            <p>자기 취향 드라마</p>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="drama1">
+                <label class="form-check-label" for="drama">
+                    도깨비
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="drama2">
+                <label class="form-check-label" for="drama2">
+                    멜로가체질
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="drama3">
+                <label class="form-check-label" for="drama3">
+                    이태원클라쓰
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="drama4">
+                <label class="form-check-label" for="drama4">
+                    시그널
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="drama5">
+                <label class="form-check-label" for="drama5">
+                    라이브
+                </label>
+            </div>
+
+            <button class="btn btn-outline-danger" type="button" id="test" onclick="dramaCount()">등록</button>
+            <button class="btn btn-outline-danger" type="reset">취소</button>
+          
+        </div>
+    </body>
+<script type="text/javascript">
+    function dramaCount() {
+        var checkCount = 0;
+
+        if (document.getElementById('drama1').checked) {
+            checkCount = checkCount + 1;
+        }
+        if (document.getElementById('drama2').checked) {
+            checkCount = checkCount + 1;
+        }
+        if (document.getElementById('drama3').checked) {
+            checkCount = checkCount + 1;
+        }
+        if (document.getElementById('drama4').checked) {
+            checkCount = checkCount + 1;
+        }
+        if (document.getElementById('drama5').checked) {
+            checkCount = checkCount + 1;
+        }
+
+        alert(document.getElementById('nameBox').value + '님, 저와 ' + checkCount + '개의 취향이 같으시네요!');
+    }
+</script>
+</html>
